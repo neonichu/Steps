@@ -9,6 +9,10 @@ Warning: Ugly code also.
 
 ---
 
+This fork aims to add Jawbone UP support to this app.
+
+---
+
 <center>
 
 ![Screenshot](https://github.com/orta/Steps/raw/master/web/setup.png)-
