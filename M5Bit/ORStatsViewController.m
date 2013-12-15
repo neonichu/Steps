@@ -8,7 +8,7 @@
 
 #import "ORStatsViewController.h"
 #import <NSDate-Extensions/NSDate-Utilities.h>
-#import "ORFitbitAPI.h"
+#import "BBUUPAPI.h"
 #import "ORStat.h"
 #import "ORDisplayCell.h"
 #import "ARReusableLoadingView.h"
@@ -60,7 +60,7 @@
 
 - (void)tick:(NSTimer *)timer
 {
-    BOOL networkIsFree = ![[ORFitbitAPI sharedAPI] running];
+    BOOL networkIsFree = ![[BBUUPAPI sharedAPI] running];
     BOOL nearBottom = (self.tableView.contentSize.height - CGRectGetHeight(self.view.bounds) - self.tableView.contentOffset.y) < 300;
 
     if (networkIsFree && nearBottom) {
@@ -97,7 +97,7 @@
             });
         }];
 
-        [[ORFitbitAPI sharedAPI] getStepsForDaysAgo:i :^(id JSON) {
+        [[BBUUPAPI sharedAPI] getStepsForDaysAgo:i :^(id JSON) {
             NSNumber *steps = JSON[@"summary"][@"steps"];
             stat.fitbitSteps = steps.integerValue;
 
@@ -150,7 +150,7 @@
 {
     ORStat *stat = self.stats[indexPath.row];
 
-    [[ORFitbitAPI sharedAPI] setSteps:stat.m5Steps forDaysAgo:indexPath.row :^(id JSON) {
+    [[BBUUPAPI sharedAPI] setSteps:stat.m5Steps forDaysAgo:indexPath.row :^(id JSON) {
         NSLog(@"win");
         stat.fitbitSteps = stat.m5Steps;
 

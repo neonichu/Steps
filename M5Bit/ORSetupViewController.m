@@ -10,6 +10,7 @@
 #import <SFHFKeychainUtils/SFHFKeychainUtils.h>
 #import "OAuth1Controller.h"
 #import "ORStatsViewController.h"
+#import "BBUUPAPI.h"
 
 @import CoreMotion;
 
@@ -72,6 +73,19 @@
 
 - (IBAction)giveAccessToFitBitTapped:(id)sender
 {
+    [[BBUUPAPI sharedAPI] loginWithCompletionHandler:^(UPSession *session, NSError *error) {
+        if (!error) {
+            self.fitbitButton.enabled = NO;
+            self.hasFitBitSorted = YES;
+            
+            [self checkToEnableContinue];
+        } else {
+            NSLog(@"Error authenticating: %@", error.localizedDescription);
+        }
+    }];
+    
+    return;
+    
     self.webView.hidden = NO;
 
     self.authController = [[OAuth1Controller alloc] init];

@@ -31,6 +31,7 @@
 		60E47A5218307CA40003E4BF /* ORStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E47A5118307CA40003E4BF /* ORStat.m */; };
 		60E47A5A18307E6F0003E4BF /* ARSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E47A5918307E6F0003E4BF /* ARSpinner.m */; };
 		60E47A5D18307EA60003E4BF /* ARReusableLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E47A5C18307EA60003E4BF /* ARReusableLoadingView.m */; };
+		868F1F14185E52710054CFCF /* BBUUPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 868F1F13185E52710054CFCF /* BBUUPAPI.m */; };
 		868F1F16185E52D10054CFCF /* UPPlatformSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868F1F15185E52D10054CFCF /* UPPlatformSDK.framework */; };
 		A95A9BD3A7E64AC1AFF7130E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD81E4B729994DBF8D3443B5 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,8 @@
 		60E47A5918307E6F0003E4BF /* ARSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSpinner.m; sourceTree = "<group>"; };
 		60E47A5B18307EA60003E4BF /* ARReusableLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARReusableLoadingView.h; sourceTree = "<group>"; };
 		60E47A5C18307EA60003E4BF /* ARReusableLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARReusableLoadingView.m; sourceTree = "<group>"; };
+		868F1F12185E52710054CFCF /* BBUUPAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBUUPAPI.h; sourceTree = "<group>"; };
+		868F1F13185E52710054CFCF /* BBUUPAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBUUPAPI.m; sourceTree = "<group>"; };
 		868F1F15185E52D10054CFCF /* UPPlatformSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPPlatformSDK.framework; sourceTree = "<group>"; };
 		FD81E4B729994DBF8D3443B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -209,6 +212,8 @@
 		60E47A5518307CF50003E4BF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				868F1F12185E52710054CFCF /* BBUUPAPI.h */,
+				868F1F13185E52710054CFCF /* BBUUPAPI.m */,
 				60E47A3B182ED07B0003E4BF /* ORFitbitAPI.h */,
 				60E47A3C182ED07B0003E4BF /* ORFitbitAPI.m */,
 			);
@@ -342,6 +347,7 @@
 				60E47A45183072F90003E4BF /* ASIFormDataRequest+OAuth.m in Sources */,
 				60E47A3A182E8E8E0003E4BF /* NSString+URLEncoding.m in Sources */,
 				60E47A37182E8E8E0003E4BF /* hmac.c in Sources */,
+				868F1F14185E52710054CFCF /* BBUUPAPI.m in Sources */,
 				60E47A4C183073210003E4BF /* NSString+URLEncode.m in Sources */,
 				60CA3127182E77020022C7C8 /* main.m in Sources */,
 				60CA312B182E77020022C7C8 /* ORAppDelegate.m in Sources */,
