@@ -31,6 +31,7 @@
 		60E47A5218307CA40003E4BF /* ORStat.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E47A5118307CA40003E4BF /* ORStat.m */; };
 		60E47A5A18307E6F0003E4BF /* ARSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E47A5918307E6F0003E4BF /* ARSpinner.m */; };
 		60E47A5D18307EA60003E4BF /* ARReusableLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E47A5C18307EA60003E4BF /* ARReusableLoadingView.m */; };
+		868F1F16185E52D10054CFCF /* UPPlatformSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868F1F15185E52D10054CFCF /* UPPlatformSDK.framework */; };
 		A95A9BD3A7E64AC1AFF7130E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD81E4B729994DBF8D3443B5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		60E47A5918307E6F0003E4BF /* ARSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARSpinner.m; sourceTree = "<group>"; };
 		60E47A5B18307EA60003E4BF /* ARReusableLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARReusableLoadingView.h; sourceTree = "<group>"; };
 		60E47A5C18307EA60003E4BF /* ARReusableLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARReusableLoadingView.m; sourceTree = "<group>"; };
+		868F1F15185E52D10054CFCF /* UPPlatformSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UPPlatformSDK.framework; sourceTree = "<group>"; };
 		FD81E4B729994DBF8D3443B5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 			files = (
 				60CA311D182E77020022C7C8 /* CoreGraphics.framework in Frameworks */,
 				60CA311F182E77020022C7C8 /* UIKit.framework in Frameworks */,
+				868F1F16185E52D10054CFCF /* UPPlatformSDK.framework in Frameworks */,
 				60CA311B182E77020022C7C8 /* Foundation.framework in Frameworks */,
 				A95A9BD3A7E64AC1AFF7130E /* libPods.a in Frameworks */,
 			);
@@ -120,6 +123,7 @@
 		60CA3119182E77020022C7C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				868F1F15185E52D10054CFCF /* UPPlatformSDK.framework */,
 				60CA311A182E77020022C7C8 /* Foundation.framework */,
 				60CA311C182E77020022C7C8 /* CoreGraphics.framework */,
 				60CA311E182E77020022C7C8 /* UIKit.framework */,
@@ -455,6 +459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "M5Bit/Steps-Prefix.pch";
 				INFOPLIST_FILE = "M5Bit/Steps-Info.plist";
@@ -469,6 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "M5Bit/Steps-Prefix.pch";
 				INFOPLIST_FILE = "M5Bit/Steps-Info.plist";
